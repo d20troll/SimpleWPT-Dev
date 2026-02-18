@@ -2,64 +2,48 @@
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 2,
   "settings": {
+    "appearanceTools": true,
     "color": {
-      "custom": false,
-      "customDuotone": false,
-      "customGradient": false,
-      "defaultGradients": false,
       "defaultPalette": false,
       "palette": [
         {
-          "slug": "primary",
-          "color": "#2563eb",
-          "name": "Primary"
+          "slug": "brand-primary",
+          "color": "#000000",
+          "name": "Brand Primary"
         },
         {
-          "slug": "secondary",
-          "color": "#7c3aed",
-          "name": "Secondary"
+          "slug": "brand-secondary",
+          "color": "#444444",
+          "name": "Brand Secondary"
         },
         {
-          "slug": "accent",
-          "color": "#f59e0b",
-          "name": "Accent"
-        },
-        {
-          "slug": "dark",
-          "color": "#1f2937",
-          "name": "Dark"
-        },
-        {
-          "slug": "gray",
-          "color": "#6b7280",
-          "name": "Gray"
-        },
-        {
-          "slug": "light-gray",
-          "color": "#f3f4f6",
-          "name": "Light Gray"
-        },
-        {
-          "slug": "white",
+          "slug": "surface-base",
           "color": "#ffffff",
-          "name": "White"
-        }
-      ],
-      "gradients": [
-        {
-          "slug": "primary-to-secondary",
-          "gradient": "linear-gradient(135deg, #2563eb 0%, #7c3aed 100%)",
-          "name": "Primary to Secondary"
+          "name": "Surface Base"
         },
         {
-          "slug": "accent-fade",
-          "gradient": "linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%)",
-          "name": "Accent Fade"
+          "slug": "surface-card",
+          "color": "#f3f4f6",
+          "name": "Surface Card"
+        },
+        {
+          "slug": "text-main",
+          "color": "#111111",
+          "name": "Text Main"
+        },
+        {
+          "slug": "text-muted",
+          "color": "#666666",
+          "name": "Text Muted"
+        },
+        {
+          "slug": "state-error",
+          "color": "#cc0000",
+          "name": "State Error"
         }
       ]
     },
     "typography": {
-      "customFontSize": false,
       "fontSizes": [
         {
           "slug": "small",
@@ -82,47 +66,8 @@
           "name": "Large"
         },
         {
-          "slug": "x-large",
+          "slug": "xl",
           "size": "2.5rem",
-          "name": "Extra Large"
-        }
-      ],
-      "fontFamilies": [
-        {
-          "fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
-          "slug": "system",
-          "name": "System Font"
-        }
-      ]
-    },
-    "spacing": {
-      "units": ["px", "em", "rem", "vh", "vw", "%"],
-      "padding": true,
-      "margin": true,
-      "spacingSizes": [
-        {
-          "slug": "xs",
-          "size": "0.5rem",
-          "name": "Extra Small"
-        },
-        {
-          "slug": "small",
-          "size": "1rem",
-          "name": "Small"
-        },
-        {
-          "slug": "medium",
-          "size": "1.5rem",
-          "name": "Medium"
-        },
-        {
-          "slug": "large",
-          "size": "2rem",
-          "name": "Large"
-        },
-        {
-          "slug": "x-large",
-          "size": "3rem",
           "name": "Extra Large"
         }
       ]
@@ -130,141 +75,6 @@
     "layout": {
       "contentSize": "800px",
       "wideSize": "1200px"
-    },
-    "custom": {
-      "spacing": {
-        "xs": "0.5rem",
-        "small": "1rem",
-        "medium": "1.5rem",
-        "large": "2rem",
-        "x-large": "3rem"
-      },
-      "borderRadius": "8px",
-      "transition": "0.2s ease-in-out"
-    }
-  },
-  "styles": {
-    "color": {
-      "background": "#ffffff",
-      "text": "#1f2937"
-    },
-    "typography": {
-      "fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
-      "fontSize": "1rem",
-      "lineHeight": "1.6"
-    },
-    "spacing": {
-      "padding": {
-        "top": "0",
-        "right": "0",
-        "bottom": "0",
-        "left": "0"
-      }
-    },
-    "elements": {
-      "link": {
-        "color": {
-          "text": "#2563eb"
-        },
-        ":hover": {
-          "color": {
-            "text": "#7c3aed"
-          }
-        }
-      },
-      "h1": {
-        "typography": {
-          "fontSize": "2.5rem",
-          "lineHeight": "1.2",
-          "fontWeight": "700"
-        },
-        "spacing": {
-          "margin": {
-            "bottom": "1.5rem"
-          }
-        }
-      },
-      "h2": {
-        "typography": {
-          "fontSize": "2rem",
-          "lineHeight": "1.2",
-          "fontWeight": "700"
-        },
-        "spacing": {
-          "margin": {
-            "bottom": "1.5rem"
-          }
-        }
-      },
-      "h3": {
-        "typography": {
-          "fontSize": "1.75rem",
-          "lineHeight": "1.2",
-          "fontWeight": "700"
-        },
-        "spacing": {
-          "margin": {
-            "bottom": "1.5rem"
-          }
-        }
-      },
-      "button": {
-        "color": {
-          "background": "#2563eb",
-          "text": "#ffffff"
-        },
-        "border": {
-          "radius": "8px"
-        },
-        "spacing": {
-          "padding": {
-            "top": "1rem",
-            "right": "2rem",
-            "bottom": "1rem",
-            "left": "2rem"
-          }
-        },
-        ":hover": {
-          "color": {
-            "background": "#7c3aed"
-          }
-        }
-      }
-    },
-    "blocks": {
-      "core/button": {
-        "color": {
-          "background": "#2563eb",
-          "text": "#ffffff"
-        }
-      },
-      "core/quote": {
-        "border": {
-          "color": "#2563eb",
-          "width": "0 0 0 4px",
-          "style": "solid"
-        },
-        "spacing": {
-          "padding": {
-            "left": "1.5rem"
-          },
-          "margin": {
-            "top": "2rem",
-            "bottom": "2rem"
-          }
-        },
-        "color": {
-          "text": "#6b7280"
-        },
-        "typography": {
-          "fontStyle": "italic"
-        }
-      },
-      "core/separator": {
-        "color": {
-          "background": "#f3f4f6"
-        }
-      }
     }
   }
 }
