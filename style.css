@@ -36,9 +36,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   --spacing-2xl: 4rem;
 
   /* Layout */
-  --content-width: 1200px;
-  --content-narrow: 800px;
-  --border-radius: 8px;
+  --content-width: 80vw;
+  --content-narrow: 70vw;
+  --border-radius: 4px;
 
   /* Transitions */
   --transition-base: 0.2s ease-in-out;
